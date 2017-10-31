@@ -19,6 +19,7 @@ var paths = {
     fonts: "source/fonts/*.*",
     img: "source/img/*.*",
     html: "source/templates/slides.html",
+    allhtml: "source/templates/**/*.html",
     js: "source/javascripts/**/*.js",
     root: "./",
     scss: "source/stylesheets/slides.scss",
@@ -63,7 +64,7 @@ gulp.task("images", function () {
 gulp.task("watch", function() {
     gulp.watch(paths.js,   ["js"])
     gulp.watch(paths.allscss, ["sass"])
-    gulp.watch(paths.html, ["html"])
+    gulp.watch(paths.allhtml, ["html"])
 })
 
 gulp.task("connect", function() {

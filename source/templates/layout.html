@@ -14,8 +14,18 @@
     <body>
         <main class="reveal">
             <article class="slides">
-            {% block slides %}
-            {% endblock %}
+                {% block intro %}
+                {% endblock %}
+                
+                {% block imposter %}
+                {% endblock %}
+
+                {% block testing %}
+                {% endblock %}
+
+                {% block devtools %}
+                {% endblock %}
+            </article>
         </main>
     </body>
 </html>
