@@ -36,97 +36,11 @@ body {
         }
 
     }
-    
-    
 
-    h1, h2, h3 {
-        color: $blue;
-        font-family: $font-heading;
-        font-weight: bold;
-        letter-spacing: normal;
-        line-height: 1.2;
-        margin: 0 0 20px 0;
-        text-shadow: none;
-        text-transform: none;
-        word-wrap: break-word;
-
-        &.shadow-title {
-            text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.7);
-        }
-
-        &.white-txt {
-            color: $white;
-        }
-
-        &.blue-txt {
-            color: $blue;
-        }
-        
-        &.black-txt {
-            color: $black;
-        }   
-        
+    img {
         &.left {
-            text-align: left;
+            display: inherit;
         }
-        
-        &.right {
-            text-align: right;
-        }        
-         
-    }
-
-    .amsterdam {
-        background: #ff0000;
-        padding: 0 10px;
-        color: $white;
-        position: relative;
-
-        &:before {
-            content: 'X X X';
-            color: #000;
-            position: absolute;
-            top: -30px;
-            width: 100%;
-            text-align: right;
-            right: 10px;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-            font-family: montserrat;
-            z-index: -1;
-        }
-    }    
-
-    h1 {
-        font-size: 2.8em;
-    }
-
-    h2 {
-        font-size: 2.0em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    p {
-        margin: 20px 0;
-        line-height: 1.3;
-
-        &.left {
-            text-align: left;
-        }
-
-        &.right {
-            text-align: right;
-        }  
-        
-        &.big {
-            font-size: 1.7em;
-        }
-
-        &.medium {
-            font-size: 1.3em;
-        }        
     }
 
     img,
@@ -134,15 +48,6 @@ body {
     iframe {
         max-width: 95%;
         max-height: 95%;
-    }
-
-    strong,
-    b {
-        font-weight: bold;
-    }
-
-    em {
-        font-style: italic;
     }
 
     ol,
@@ -346,10 +251,30 @@ body {
         color: #42affa;
     }
 
-    .blackbg {
-        background-color: rgba(0, 0, 0, 0.8);
+    .bg {
+        &__black {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        &__white {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
     } 
 
+    .position {
+        &__top {
+            margin-top: -250px;
+            padding: 20px 0;
+        }
+        &__bottom {
+            margin-top: 300px;
+            padding: 20px 0;
+        }
+    }
+
+    .heart:before {
+        content: '\2665';
+        color: red;
+    }
 }
 
 ::selection {
