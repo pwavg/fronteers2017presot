@@ -8,6 +8,7 @@
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
         <link href="assets/css/slides.css" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
         <script src="assets/js/slides.js"></script>
     </head>
@@ -16,14 +17,14 @@
             <article class="slides">
                 {% block intro %}
                 {% endblock %}
+
+                {% block testing %}
+                {% endblock %}
                 
                 {% block imposter %}
                 {% endblock %}
 
-                {% block testing %}
-                {% endblock %}
-
-                {% block devtools %}
+                {% block outro %}
                 {% endblock %}
             </article>
         </main>

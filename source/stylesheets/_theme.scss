@@ -37,6 +37,12 @@ body {
 
     }
 
+    .testing-label {
+        background: #fff;
+        transform: rotate(-7deg);
+        margin-top: -80px;
+    }
+
     img {
         &.left {
             display: inherit;
