@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		controls: false,
 		progress: true,
 		history: true,
-		center: true,
+        center: true,
+        mouseWheel: true,
 		transition: 'slide',
 		dependencies: [
 			{ src: `${prefix}/markdown/marked.js`, condition: () => !!document.querySelector('[data-markdown]') },

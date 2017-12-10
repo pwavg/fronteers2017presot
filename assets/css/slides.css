@@ -1581,7 +1581,9 @@ body {
     background: #fff;
     -webkit-transform: rotate(-7deg);
             transform: rotate(-7deg);
-    margin-top: -80px; }
+    margin-top: -100px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .reveal img.left {
     display: inherit; }
   .reveal img,
@@ -1760,7 +1762,7 @@ body {
   color: #000; }
 
 .reveal .big-txt {
-  font-size: 1.9em; }
+  font-size: 1.7em; }
 
 .reveal h1.left, .reveal h2.left, .reveal h3.left, .reveal p.left {
   text-align: left; }
